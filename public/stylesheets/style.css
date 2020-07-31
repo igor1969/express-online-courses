@@ -1,0 +1,43 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1 {
+  text-align: center;
+  margin: 3rem auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+.wrapper {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.header-wrapper {
+  text-align: center;
+  margin: 2rem auto 3rem;
+}
+
+.form-wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.navbar {
+  justify-content: center;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+

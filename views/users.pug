@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    include navbar
+    h1= title
+    ul
+      each val, index in name
+          li= index+1 + '.' + ' ' + val
+    p= 'Back to Start Page:'
+    a(href='//localhost:3333/')= 'Start'

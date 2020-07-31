@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    include navbar
+    .container
+        h1= header + ' по ' + title
+        .cards-wrapper
+            .container(class="cards-wrapper")
+                    div(class="card" style="width: 500px; margin:3rem auto")
+                        div(class="card-body")
+                            h5(class="card-title")=title
+                            p(class="card-text")=description
+                            a(href="/all-courses" class="card-link")='Назад'
+            .wrapper
+                h4(style="margin-bottom:3rem")= 'Расписание занятий'
+                    each item,index in schedule
+                        .wrapper(style="text-align:left; margin-top:3rem")
+                            a(href="/course/" + item.id class="card-link")=  index+1 + '.' + ' ' + item.title
+                            p(style="font-size: 16px;margin-top:1rem")= item.description
+                            hr
+
+

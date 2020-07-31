@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    include navbar
+    .container
+        h1= header
+        .cards-wrapper
+            .container(class="cards-wrapper")
+                each item in courses
+                    div(class="card" style="width: 300px; margin-bottom:3rem")
+                        div(class="card-body")
+                            h5(class="card-title")=item.title
+                            p(class="card-text")=item.description
+                            a(href="/course/" + item.id class="card-link")='Открыть'
+
